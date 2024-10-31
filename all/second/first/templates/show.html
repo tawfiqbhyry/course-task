@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            padding: 0 20px;
+        }
+
+        blockquote {
+            border-left: 5px solid #ccc;
+            padding-left: 10px;
+            color: #666;
+        }
+
+        code {
+            background-color: #f9f9f9;
+            padding: 2px 4px;
+            font-family: "Courier New", Courier, monospace;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        form {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Tags Demonstration</h1>
+    </header>
+
+    <section>
+        <h2>Text Elements</h2>
+        <p>This is a paragraph. <strong>This text is bold.</strong> <em>This text is italic.</em> <u>This text is
+                underlined.</u></p>
+        <p><small>This is small text.</small> <mark>This is highlighted text.</mark> <del>This is deleted text.</del>
+            <ins>This is inserted text.</ins>
+        </p>
+        <p>This is a link: <a href="#">Click Here</a></p>
+        <blockquote>
+            "This is a blockquote. It is used to quote a section of text from another source."
+        </blockquote>
+        <pre><code>code block example</code></pre>
+    </section>
+
+    <section>
+        <h2>Headings</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </section>
+
+    <section>
+        <h2>Lists</h2>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>A markup language for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>A style sheet language used for describing the presentation of a document.</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <main>
+        <div id="gallery" class="gallery"></div>
+    </main>
+    <section>
+        <h2>Form</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <label for="select">Choose an option:</label>
+            <select id="select" name="select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Footer Section &copy; 2024</p>
+    </footer>
+
+    <section>
+        <h2>Embedded Localhost (Port 8000)</h2>
+        <iframe src="https://www.w3school.com" width="100%" height="600" style="border:1px solid #ccc;"></iframe>
+    </section>
+    <script>
+        const gallery = document.getElementById("gallery");
+        const accessKey = "qd8EfeS2tD9kZJqZ8EPWzaJX5LjA5d3M180lGtXyuvA"; // Replace with your Unsplash Access Key
+
+        async function fetchImages() {
+            try {
+                const response = await fetch(`https://api.unsplash.com/photos/random?count=30&client_id=${accessKey}`);
+                const data = await response.json();
+                displayImages(data);
+            } catch (error) {
+                console.error("Error fetching images:", error);
+            }
+        }
+
+        function displayImages(images) {
+            images.forEach(image => {
+                const imgElement = document.createElement("img");
+                imgElement.src = image.urls.small;
+                imgElement.alt = image.alt_description || "Image from Unsplash";
+                gallery.appendChild(imgElement);
+            });
+        }
+
+        // Fetch images on page load
+        fetchImages();
+
+    </script>
+</body>
+
+</html>
